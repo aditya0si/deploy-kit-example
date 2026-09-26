@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  ci:
+    uses: aditya0si/deploy-kit/.github/workflows/ci-python.yml@main
